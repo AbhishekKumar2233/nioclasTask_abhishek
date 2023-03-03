@@ -1,0 +1,82 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image:radial-gradient(#002651,#005ca4,#0077cc,#005ca4);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Container{
+  display: flex;
+  margin: 8% auto;
+  width: 80%;
+  height: 60vh;
+  padding: 20px;
+  background-color: white;
+}
+.main{
+  width: 100%;
+  height: 100%;
+}
+.btn-group{
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn{ 
+  width: 8rem;
+  height: 2.9rem;
+  padding: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  background:#005ca4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.btn:hover{
+  background-color: white;
+  color:#005ca4;
+  border: 2.8px solid #005ca4;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.disable-btn{
+  width: 8rem;
+  height: 2.9rem;
+  padding: 5px;
+  font-size: 1rem;
+  cursor:not-allowed;
+  background:lightsteelblue;
+  color: rgb(240, 239, 239);
+  border: none;
+  border-radius: 10px;
+
+}
+.loading{
+  display: flex;
+  width: 100%;
+  height: 80%;
+  font-size: 1.7rem;
+  line-height: 48px;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 600px){
+  .btn{ 
+    width: 6rem;
+    height: 2.9rem;
+  }
+  .disable-btn{
+    width: 6rem;
+    height: 2.9rem;
+  }
+  .loading{
+    height: 76.5%;
+    font-size: 1.2rem;
+  }
+}
