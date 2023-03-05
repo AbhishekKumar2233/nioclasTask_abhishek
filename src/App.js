@@ -30,14 +30,17 @@ function App() {
       });
   }
 
-  console.log(index, "index")
+  const refreshfunc = () => {
+    window.location.reload();
+  }
+
+
   return (
 
     <div className="Container">
 
       <div className="main">
-      {loader ? <div className="loading"><h2>Loading...</h2></div> : 
-       <Questions quesdata={quesdata} index={index}  /> }
+       <Questions quesdata={quesdata} index={index} loader={loader} refreshfunc={refreshfunc} /> 
         <div className="btn-group">
           <button className={index > 0 ? "btn" : "disable-btn"} onClick={() => {
             setIndex(index > 0 ? index - 1 : 0)
